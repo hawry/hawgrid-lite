@@ -194,10 +194,23 @@ img {
 }
 [class*='small-'],[class*='medium-'],[class*='large-'],[class*='xlarge-'] {
     float:      left;
-    padding:    $lite-gutter;
+    padding: 0.2rem $lite-gutter 0.2rem $lite-gutter;
     min-height: 0.1em;
 }
-
+.text- {
+    &left {
+        text-align:left;
+    }
+    &justify {
+        text-align: justify;
+    }
+    &center {
+        text-align: center;
+    }
+    &right {
+        text-align: right;
+    }
+}
 @media #{$bp-small-up} {
     .row {
         max-width:  $row-width-small;
@@ -205,12 +218,12 @@ img {
     @include create-columns("small");
     @include create-offset("small");
     @include show-up("small");
+    //@include show-down("small");
 }
 @media #{$bp-small-only} {
     @include show-only("small");
 }
 @media #{$bp-small-down} {
-    @include show-down("small");
 }
 
 @media #{$bp-medium-up} {
@@ -220,11 +233,11 @@ img {
     @include create-columns("medium");
     @include create-offset("medium");
     @include show-up("medium");}
+    //@include show-down("medium");
 @media #{$bp-medium-only} {
     @include show-only("medium");
 }
 @media #{$bp-medium-down} {
-    @include show-down("medium");
 }
 
 @media #{$bp-large-up} {
@@ -234,11 +247,11 @@ img {
     @include create-columns("large");
     @include create-offset("large");
     @include show-up("large");}
+    //@include show-down("large");   
 @media #{$bp-large-only} {
     @include show-only("large");
 }
 @media #{$bp-large-down} {
-    @include show-down("large");   
 }
 
 @media #{$bp-xlarge-up} {
@@ -248,9 +261,9 @@ img {
     @include create-columns("xlarge");
     @include create-offset("xlarge");
     @include show-up("xlarge");}
+   // @include show-down("xlarge");
 @media #{$bp-xlarge-only} {
     @include show-only("xlarge");
 }
 @media #{$bp-xlarge-down} {
-    @include show-down("xlarge");
 }
