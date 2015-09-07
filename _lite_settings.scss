@@ -1,0 +1,15 @@
+//HawGrid Lite
+$lite-max-grids: 12;
+$lite-gutter: 1em;
+$font-base-size: 16px;
+
+//Breakpoints
+$bp-small:  (0,40em);
+$bp-medium: (40.00001em,64em);
+$bp-large:  (64.00001em,90em);
+$bp-xlarge: (90.00001, 500000em);
+
+$row-width-small:   64em;
+$row-width-medium:  $row-width-small;
+$row-width-large:   $row-width-medium;
+$row-width-xlarge:  80em;
